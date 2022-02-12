@@ -16,5 +16,7 @@ https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt
 
 ### Extracting Dataset
 mkdir -p Data
+
 cp /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_PC_v1_00.tsv.gz Data/
+
 gunzip -k amazon_reviews_us_PC_v1_00.tsv.gz
