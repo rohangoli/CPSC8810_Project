@@ -1,3 +1,5 @@
+Feb 12 2022
+===========
 https://medium.com/rapids-ai/accelerating-tf-idf-for-natural-language-processing-with-dask-and-rapids-6f6e416429df
 https://www.ateam-oracle.com/post/tf-idf-implementation-comparison-with-python
 
@@ -9,3 +11,6 @@ https://www.jumpingrivers.com/blog/parquet-file-format-big-data-r/
 https://docs.dask.org/en/stable/gpu.html
 https://pythonrepo.com/repo/rapidsai-cuml-python-gpu-utilities
 https://saturncloud.io/docs/examples/python/rapids/qs-02-rapids-gpu-cluster/
+
+https://medium.com/dropout-analytics/distributed-linear-regression-with-cuml-b4f32d727e22
+https://github.com/Dropout-Analytics/cuml_linear_regression/blob/master/distributed/distributed_linear_regression.ipynb
