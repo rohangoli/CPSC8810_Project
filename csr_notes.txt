@@ -1,0 +1,30 @@
+Construct a Compressed Sparse Row (CSR) matrix incrementally, the following snippet builds a term-document matrix from texts:
+====================================================================================================
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html
+
+>>> import numpy as np
+>>> from scipy.sparse import csr_matrix
+
+>>> row = np.array([0, 0, 1, 2, 2, 2])
+>>> col = np.array([0, 2, 2, 0, 1, 2])
+>>> data = np.array([1, 2, 3, 4, 5, 6])
+>>> csr_matrix((data, (row, col)), shape=(3, 3)).toarray()
+array([[1, 0, 2],
+       [0, 0, 3],
+       [4, 5, 6]])
+
+>>> docs = [["hello", "world", "hello"], ["goodbye", "cruel", "world"]]
+>>> indptr = [0]
+>>> indices = []
+>>> data = []
+>>> vocabulary = {}
+>>> for d in docs:
+...     for term in d:
+...         index = vocabulary.setdefault(term, len(vocabulary))
+...         indices.append(index)
+...         data.append(1)
+...     indptr.append(len(indices))
+...
+>>> csr_matrix((data, indices, indptr), dtype=int).toarray()
+array([[2, 1, 0, 0],
+       [0, 1, 1, 1]])
