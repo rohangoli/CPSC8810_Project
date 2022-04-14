@@ -1,0 +1,55 @@
+(rapids-22.02) [rgoli@node0006 Project]$ python Rapids_Dask/tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_Books_v1_00.tsv -ftype tsv
+distributed.diskutils - INFO - Found stale lock file and directory '/home/rgoli/clemson/cpsc-8810-ece8930/Project/dask-worker-space/worker-8tb7n6oo', purging
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+Size: 0.466GB    Time: 80.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_Entertainment_v1_00.tsv
+Size: 1.16GB     Time: 24.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Office_Products_v1_00.tsv
+Size: 2.07GB     Time: 42.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Kitchen_v1_00.tsv
+Size: 1.29GB     Time: 26.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Mobile_Apps_v1_00.tsv
+Size: 3.02GB     Time: 70.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_02.tsv
+Size: 0.443GB    Time: 10.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Musical_Instruments_v1_00.tsv
+Size: 3.42GB     Time: 77.2 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Music_v1_00.tsv
+Size: 0.0681GB   Time: 1.97 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Video_Games_v1_00.tsv
+Size: 0.891GB    Time: 20.5 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Grocery_v1_00.tsv
+Size: 3.0GB      Time: 62.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Ebook_Purchase_v1_01.tsv
+Size: 1.61GB     Time: 34.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Electronics_v1_00.tsv
+Size: 6.24GB     Time: 1.41e+02 seconds          File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv
+Size: 6.24GB     Time: 1.47e+02 seconds          File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_00.tsv
+Size: 1.26GB     Time: 25.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Automotive_v1_00.tsv
+Size: 1.83GB     Time: 36.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Toys_v1_00.tsv
+Size: 0.0502GB   Time: 2.04 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Software_v1_00.tsv
+Size: 0.315GB    Time: 6.33 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_v1_00.tsv
+Size: 0.342GB    Time: 8.22 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Furniture_v1_00.tsv
+Size: 0.384GB    Time: 9.01 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Watches_v1_00.tsv
+Size: 1.12GB     Time: 23.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_Improvement_v1_00.tsv
+Size: 1.84GB     Time: 35.6 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Apparel_v1_00.tsv
+Size: 0.575GB    Time: 12.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Jewelry_v1_00.tsv
+Size: 2.32GB     Time: 47.2 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_v1_00.tsv
+Size: 1.12GB     Time: 27.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_Games_v1_00.tsv
+Size: 1.2GB      Time: 25.5 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Video_Download_v1_00.tsv
+Size: 3.4GB      Time: 80.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_PC_v1_00.tsv
+Size: 1.14GB     Time: 26.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Pet_Products_v1_00.tsv
+Size: 2.26GB     Time: 59.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Health_Personal_Care_v1_00.tsv
+Size: 1.02GB     Time: 23.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Camera_v1_00.tsv
+Size: 0.14GB     Time: 3.6 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Luggage_v1_00.tsv
+Size: 0.0542GB   Time: 1.27 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Mobile_Electronics_v1_00.tsv
+Size: 2.0GB      Time: 41.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Beauty_v1_00.tsv
+Size: 3.91GB     Time: 84.8 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Wireless_v1_00.tsv
+Size: 0.0418GB   Time: 1.2 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Personal_Care_Appliances_v1_00.tsv
+Size: 0.232GB    Time: 6.08 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Software_v1_00.tsv
+Size: 6.24GB     Time: 1.47e+02 seconds          File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_01.tsv
+Size: 0.812GB    Time: 17.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Baby_v1_00.tsv
+Size: 3.45GB     Time: 76.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_DVD_v1_00.tsv
+Size: 1.46GB     Time: 28.2 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Shoes_v1_00.tsv
+Size: 0.0587GB   Time: 1.66 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Major_Appliances_v1_00.tsv
+Size: 1.07GB     Time: 21.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Lawn_and_Garden_v1_00.tsv
+Size: 0.586GB    Time: 13.6 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Music_Purchase_v1_00.tsv
+Size: 0.734GB    Time: 15.5 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Tools_v1_00.tsv
+Size: 0.989GB    Time: 23.2 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Outdoors_v1_00.tsv
+Size: 0.0372GB   Time: 1.04 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Gift_Card_v1_00.tsv
+Size: 1.87GB     Time: 44.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Sports_v1_00.tsv
+Total Time: 1717.2060883045197
+distributed.nanny - WARNING - Worker process still alive after 3 seconds, killing
+Exception in thread AsyncProcess Dask Worker process (from Nanny) watch process join:
+Traceback (most recent call last):
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+(rapids-22.02) [rgoli@node0006 Project]$
