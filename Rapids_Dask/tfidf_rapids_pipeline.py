@@ -89,6 +89,7 @@ if __name__ == "__main__":
     
     ## Use 1 GPU as 1 Dask Worker
     cluster = LocalCUDACluster()
+    # cluster = LocalCUDACluster(CUDA_VISIBLE_DEVICES=[0, 1, 2, 4])
     client = Client(cluster)
     
     ## Uses 64 CPU cores as 8 Dask Workers
