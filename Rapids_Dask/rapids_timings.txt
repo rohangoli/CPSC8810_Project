@@ -112,3 +112,61 @@ Size: 0.989GB    Time: 10.6 seconds      File: /scratch1/rgoli/aws_customer_revi
 Size: 0.0372GB   Time: 1.04 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Gift_Card_v1_00.tsv
 Size: 1.87GB     Time: 24.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Sports_v1_00.tsv
 Total Time: 901.9111015796661
+
+===============
+4-GPUs NVIDIA V100 - NVLink
+===============
+(rapids-22.02) [rgoli@node0006 Rapids_Dask]$ cd ..
+(rapids-22.02) [rgoli@node0006 Project]$ python Rapids_Dask/tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_Books_v1_00.tsv -ftype tsv
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+Size: 0.466GB    Time: 52.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_Entertainment_v1_00.tsv
+Size: 1.16GB     Time: 10.5 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Office_Products_v1_00.tsv
+Size: 2.07GB     Time: 12.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Kitchen_v1_00.tsv
+Size: 1.29GB     Time: 11.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Mobile_Apps_v1_00.tsv
+Size: 3.02GB     Time: 18.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_02.tsv
+Size: 0.443GB    Time: 9.53 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Musical_Instruments_v1_00.tsv
+Size: 3.42GB     Time: 24.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Music_v1_00.tsv
+Size: 0.0681GB   Time: 4.31 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Video_Games_v1_00.tsv
+Size: 0.891GB    Time: 7.04 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Grocery_v1_00.tsv
+Size: 3.0GB      Time: 17.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Ebook_Purchase_v1_01.tsv
+Size: 1.61GB     Time: 13.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Electronics_v1_00.tsv
+Size: 6.24GB     Time: 40.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv
+Size: 6.24GB     Time: 40.8 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_00.tsv
+Size: 1.26GB     Time: 10.8 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Automotive_v1_00.tsv
+Size: 1.83GB     Time: 15.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Toys_v1_00.tsv
+Size: 0.0502GB   Time: 3.8 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Software_v1_00.tsv
+Size: 0.315GB    Time: 7.89 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_v1_00.tsv
+Size: 0.342GB    Time: 6.76 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Furniture_v1_00.tsv
+Size: 0.384GB    Time: 8.56 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Watches_v1_00.tsv
+Size: 1.12GB     Time: 8.23 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_Improvement_v1_00.tsv
+Size: 1.84GB     Time: 11.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Apparel_v1_00.tsv
+Size: 0.575GB    Time: 7.1 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Jewelry_v1_00.tsv
+Size: 2.32GB     Time: 15.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_v1_00.tsv
+Size: 1.12GB     Time: 9.1 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_Games_v1_00.tsv
+Size: 1.2GB      Time: 10.2 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Video_Download_v1_00.tsv
+Size: 3.4GB      Time: 22.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_PC_v1_00.tsv
+Size: 1.14GB     Time: 8.99 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Pet_Products_v1_00.tsv
+Size: 2.26GB     Time: 15.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Health_Personal_Care_v1_00.tsv
+Size: 1.02GB     Time: 6.17 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Camera_v1_00.tsv
+Size: 0.14GB     Time: 3.93 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Luggage_v1_00.tsv
+Size: 0.0542GB   Time: 2.17 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Mobile_Electronics_v1_00.tsv
+Size: 2.0GB      Time: 10.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Beauty_v1_00.tsv
+Size: 3.91GB     Time: 19.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Wireless_v1_00.tsv
+Size: 0.0418GB   Time: 1.79 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Personal_Care_Appliances_v1_00.tsv
+Size: 0.232GB    Time: 5.83 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Software_v1_00.tsv
+Size: 6.24GB     Time: 36.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_01.tsv
+Size: 0.812GB    Time: 6.89 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Baby_v1_00.tsv
+Size: 3.45GB     Time: 20.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_DVD_v1_00.tsv
+Size: 1.46GB     Time: 9.76 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Shoes_v1_00.tsv
+Size: 0.0587GB   Time: 2.39 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Major_Appliances_v1_00.tsv
+Size: 1.07GB     Time: 8.79 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Lawn_and_Garden_v1_00.tsv
+Size: 0.586GB    Time: 7.4 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Music_Purchase_v1_00.tsv
+Size: 0.734GB    Time: 7.86 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Tools_v1_00.tsv
+Size: 0.989GB    Time: 8.7 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Outdoors_v1_00.tsv
+Size: 0.0372GB   Time: 1.66 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Gift_Card_v1_00.tsv
+Size: 1.87GB     Time: 11.6 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Sports_v1_00.tsv
+Total Time: 607.3192961215973
+(rapids-22.02) [rgoli@node0006 Project]$
