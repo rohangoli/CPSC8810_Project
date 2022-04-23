@@ -98,12 +98,14 @@ if __name__ == "__main__":
 #     print(PUNCTUATIONS)
     
     if args.filetype == "tsv":
-        for file in FILES:
-            file_size = os.stat(file).st_size/(1024*1024*1024)
-            start_time = time. time()
-            result = full_pipeline_tsv(client,file)
-            print("Size: {:.3}GB \t Time: {:.3} seconds \t File: {}".format(file_size,time. time() - start_time, file))
-        print("Total Time: {}".format(time. time() - total_time_start))
+        file_size=0
+        fc=25
+        for file in FILES[:fc]:
+            file_size+=os.stat(file).st_size/(1024*1024*1024)
+        print("Total Files: {}".format(len(FILES[:fc])))
+        print("Total Size: {:.3}GB".format(file_size))
+        result = full_pipeline_tsv(client,FILES[:fc])
+        print("Total Time: {:.3} seconds".format(time. time() - total_time_start))
         
     elif args.filetype == "parquet":
         result = full_pipeline_parquet(client,args.data)

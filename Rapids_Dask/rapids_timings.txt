@@ -170,3 +170,53 @@ Size: 0.0372GB   Time: 1.66 seconds      File: /scratch1/rgoli/aws_customer_revi
 Size: 1.87GB     Time: 11.6 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Sports_v1_00.tsv
 Total Time: 607.3192961215973
 (rapids-22.02) [rgoli@node0006 Project]$
+
+distributed.worker - WARNING - Compute Failed
+Function:  _transform_func
+args:      (TfidfTransformer(), <cupyx.scipy.sparse.csr.csr_matrix object at 0x14ee55fba7c0>)
+kwargs:    {}
+Exception: "MemoryError('std::bad_alloc: out_of_memory: CUDA error at: /home/rgoli/.conda/envs/rapids-22.02/include/rmm/mr/device/cuda_memory_resource.hpp')"
+Traceback (most recent call last):
+  File "Rapids_Dask/tfidf_rapids_pipeline_v2.py", line 107, in <module>
+    result = full_pipeline_tsv(client,FILES[:fc])
+  File "Rapids_Dask/tfidf_rapids_pipeline_v2.py", line 77, in full_pipeline_tsv
+    result = tfidf_transformer(result, client)
+  File "Rapids_Dask/tfidf_rapids_pipeline_v2.py", line 59, in tfidf_transformer
+    result.compute_chunk_sizes()
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/dask/array/core.py", line 1389, in compute_chunk_sizes
+    tuple(int(chunk) for chunk in chunks) for chunks in compute(tuple(c))[0]
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/dask/base.py", line 571, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/client.py", line 2746, in get
+    results = self.gather(packed, asynchronous=asynchronous, direct=direct)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/client.py", line 1946, in gather
+    return self.sync(
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/utils.py", line 310, in sync
+    return sync(
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/utils.py", line 364, in sync
+    raise exc.with_traceback(tb)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/utils.py", line 349, in f
+    result[0] = yield future
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/client.py", line 1811, in _gather
+    raise exception.with_traceback(traceback)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cuml/dask/common/base.py", line 432, in _transform_func
+    return model.transform(data, **kwargs)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cuml/internals/api_decorators.py", line 415, in inner
+    return func(*args, **kwargs)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cuml/feature_extraction/_tfidf.py", line 206, in transform
+    X = X.copy()
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cupyx/scipy/sparse/data.py", line 60, in copy
+    return self._with_data(self.data.copy(), copy=True)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cupyx/scipy/sparse/compressed.py", line 302, in _with_data
+    (data, self.indices.copy(), self.indptr.copy()),
+  File "cupy/_core/core.pyx", line 475, in cupy._core.core.ndarray.copy
+  File "cupy/_core/core.pyx", line 501, in cupy._core.core.ndarray.copy
+  File "cupy/_core/core.pyx", line 460, in cupy._core.core.ndarray.astype
+  File "cupy/_core/core.pyx", line 167, in cupy._core.core.ndarray.__init__
+  File "cupy/cuda/memory.pyx", line 718, in cupy.cuda.memory.alloc
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/rmm/rmm.py", line 212, in rmm_cupy_allocator
+    buf = librmm.device_buffer.DeviceBuffer(size=nbytes, stream=stream)
+  File "rmm/_lib/device_buffer.pyx", line 88, in rmm._lib.device_buffer.DeviceBuffer.__cinit__
+MemoryError: std::bad_alloc: out_of_memory: CUDA error at: /home/rgoli/.conda/envs/rapids-22.02/include/rmm/mr/device/cuda_memory_resource.hpp
