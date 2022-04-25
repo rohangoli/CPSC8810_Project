@@ -30,7 +30,8 @@ Name: review_body, dtype: object
   (0, 964065)   0.26624262
   (0, 1007596)  0.2521331
   (0, 1019549)  0.3373031
-(rapids-22.02) [rgoli@node0103 Project]$ python tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_PC_v1_00.tsv -ftype tsvdistributed.preloading - INFO - Import preload module: dask_cuda.initialize
+(rapids-22.02) [rgoli@node0006 Project]$ python Rapids_Dask/tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_PC_v1_00.tsv -ftype tsv
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
 ['!', '(', ')', '-', '[', ']', '{', '}', ';', ':', "'", '"', '\\', ',', '<', '>', '.', '/', '?', '@', '#', '$', '%', '^', '&', '*', '_', '~']
 1    I am a Google employee and had to chance to us...
 1              Works perfectly, cable feels solid too.
@@ -111,11 +112,10 @@ Name: review_body, dtype: object
   (0, 1029169)  -0.030549496
   (0, 1029464)  -0.045234587
   (0, 1045494)  0.056918137
-(rapids-22.02) [rgoli@node0103 Project]$ python tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_ -ftype tsv
+--- 129.36482453346252 seconds ---
+(rapids-22.02) [rgoli@node0006 Project]$ python Rapids_Dask/tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_ -ftype tsv
 amazon_reviews_us_Books_v1_00.tsv  amazon_reviews_us_PC_v1_00.tsv     
-(rapids-22.02) [rgoli@node0103 Project]$ python tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_ -ftype tsv
-amazon_reviews_us_Books_v1_00.tsv  amazon_reviews_us_PC_v1_00.tsv     
-(rapids-22.02) [rgoli@node0103 Project]$ python tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_Books_v1_00.tsv -ftype tsv
+(rapids-22.02) [rgoli@node0006 Project]$ python Rapids_Dask/tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_Books_v1_00.tsv -ftype tsv
 distributed.preloading - INFO - Import preload module: dask_cuda.initialize
 ['!', '(', ')', '-', '[', ']', '{', '}', ';', ':', "'", '"', '\\', ',', '<', '>', '.', '/', '?', '@', '#', '$', '%', '^', '&', '*', '_', '~']
 1    My wife and I ordered 2 books and gave them as...
@@ -200,3 +200,4 @@ Name: review_body, dtype: object
   (0, 938384)   0.11120795
   (0, 952785)   0.1703512
   (0, 991318)   0.17017892
+--- 249.09108448028564 seconds ---
