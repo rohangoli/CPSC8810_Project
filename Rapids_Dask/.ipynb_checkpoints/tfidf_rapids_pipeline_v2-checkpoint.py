@@ -99,7 +99,7 @@ if __name__ == "__main__":
     
     if args.filetype == "tsv":
         file_size=0
-        fc=25
+        fc=12
         for file in FILES[:fc]:
             file_size+=os.stat(file).st_size/(1024*1024*1024)
         print("Total Files: {}".format(len(FILES[:fc])))
