@@ -28,5 +28,5 @@ conda create -n rapids-22.02 -c rapidsai -c nvidia -c conda-forge rapids=22.02 p
     TF_IDF_Serial.ipynb - jupyter notebook for serial version of TF-IDF
     TF_IDF_Thread.ipynb - jupyter notebook for parallelizing the looping construct
     TF_IDF_Threads_Spawn.ipynb - jupyter notebook for parallelizing using @spawn macro
-    mpi_tf_idf.jl - compute TF-IDf using mpi (mpirun -np <no_of_process> julia mpi_tf_idf.jl
+    mpi_tf_idf.jl - compute TF-IDf using mpi (mpirun -np <no_of_process> julia mpi_tf_idf.jl)
     TF_IDF_distributed.ipynb - jupyter notebook for parallelizing using distributed computing
