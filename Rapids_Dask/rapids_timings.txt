@@ -112,3 +112,111 @@ Size: 0.989GB    Time: 10.6 seconds      File: /scratch1/rgoli/aws_customer_revi
 Size: 0.0372GB   Time: 1.04 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Gift_Card_v1_00.tsv
 Size: 1.87GB     Time: 24.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Sports_v1_00.tsv
 Total Time: 901.9111015796661
+
+===============
+4-GPUs NVIDIA V100 - NVLink
+===============
+(rapids-22.02) [rgoli@node0006 Rapids_Dask]$ cd ..
+(rapids-22.02) [rgoli@node0006 Project]$ python Rapids_Dask/tfidf_rapids_pipeline.py -data Data/amazon_reviews_us_Books_v1_00.tsv -ftype tsv
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+distributed.preloading - INFO - Import preload module: dask_cuda.initialize
+Size: 0.466GB    Time: 52.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_Entertainment_v1_00.tsv
+Size: 1.16GB     Time: 10.5 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Office_Products_v1_00.tsv
+Size: 2.07GB     Time: 12.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Kitchen_v1_00.tsv
+Size: 1.29GB     Time: 11.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Mobile_Apps_v1_00.tsv
+Size: 3.02GB     Time: 18.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_02.tsv
+Size: 0.443GB    Time: 9.53 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Musical_Instruments_v1_00.tsv
+Size: 3.42GB     Time: 24.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Music_v1_00.tsv
+Size: 0.0681GB   Time: 4.31 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Video_Games_v1_00.tsv
+Size: 0.891GB    Time: 7.04 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Grocery_v1_00.tsv
+Size: 3.0GB      Time: 17.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Ebook_Purchase_v1_01.tsv
+Size: 1.61GB     Time: 13.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Electronics_v1_00.tsv
+Size: 6.24GB     Time: 40.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Ebook_Purchase_v1_00.tsv
+Size: 6.24GB     Time: 40.8 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_00.tsv
+Size: 1.26GB     Time: 10.8 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Automotive_v1_00.tsv
+Size: 1.83GB     Time: 15.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Toys_v1_00.tsv
+Size: 0.0502GB   Time: 3.8 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Software_v1_00.tsv
+Size: 0.315GB    Time: 7.89 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_v1_00.tsv
+Size: 0.342GB    Time: 6.76 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Furniture_v1_00.tsv
+Size: 0.384GB    Time: 8.56 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Watches_v1_00.tsv
+Size: 1.12GB     Time: 8.23 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_Improvement_v1_00.tsv
+Size: 1.84GB     Time: 11.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Apparel_v1_00.tsv
+Size: 0.575GB    Time: 7.1 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Jewelry_v1_00.tsv
+Size: 2.32GB     Time: 15.1 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Home_v1_00.tsv
+Size: 1.12GB     Time: 9.1 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_Games_v1_00.tsv
+Size: 1.2GB      Time: 10.2 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Video_Download_v1_00.tsv
+Size: 3.4GB      Time: 22.3 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_PC_v1_00.tsv
+Size: 1.14GB     Time: 8.99 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Pet_Products_v1_00.tsv
+Size: 2.26GB     Time: 15.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Health_Personal_Care_v1_00.tsv
+Size: 1.02GB     Time: 6.17 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Camera_v1_00.tsv
+Size: 0.14GB     Time: 3.93 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Luggage_v1_00.tsv
+Size: 0.0542GB   Time: 2.17 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Mobile_Electronics_v1_00.tsv
+Size: 2.0GB      Time: 10.4 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Beauty_v1_00.tsv
+Size: 3.91GB     Time: 19.7 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Wireless_v1_00.tsv
+Size: 0.0418GB   Time: 1.79 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Personal_Care_Appliances_v1_00.tsv
+Size: 0.232GB    Time: 5.83 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Software_v1_00.tsv
+Size: 6.24GB     Time: 36.0 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Books_v1_01.tsv
+Size: 0.812GB    Time: 6.89 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Baby_v1_00.tsv
+Size: 3.45GB     Time: 20.9 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Video_DVD_v1_00.tsv
+Size: 1.46GB     Time: 9.76 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Shoes_v1_00.tsv
+Size: 0.0587GB   Time: 2.39 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Major_Appliances_v1_00.tsv
+Size: 1.07GB     Time: 8.79 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Lawn_and_Garden_v1_00.tsv
+Size: 0.586GB    Time: 7.4 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Digital_Music_Purchase_v1_00.tsv
+Size: 0.734GB    Time: 7.86 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Tools_v1_00.tsv
+Size: 0.989GB    Time: 8.7 seconds       File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Outdoors_v1_00.tsv
+Size: 0.0372GB   Time: 1.66 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Gift_Card_v1_00.tsv
+Size: 1.87GB     Time: 11.6 seconds      File: /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_Sports_v1_00.tsv
+Total Time: 607.3192961215973
+(rapids-22.02) [rgoli@node0006 Project]$
+
+distributed.worker - WARNING - Compute Failed
+Function:  _transform_func
+args:      (TfidfTransformer(), <cupyx.scipy.sparse.csr.csr_matrix object at 0x14ee55fba7c0>)
+kwargs:    {}
+Exception: "MemoryError('std::bad_alloc: out_of_memory: CUDA error at: /home/rgoli/.conda/envs/rapids-22.02/include/rmm/mr/device/cuda_memory_resource.hpp')"
+Traceback (most recent call last):
+  File "Rapids_Dask/tfidf_rapids_pipeline_v2.py", line 107, in <module>
+    result = full_pipeline_tsv(client,FILES[:fc])
+  File "Rapids_Dask/tfidf_rapids_pipeline_v2.py", line 77, in full_pipeline_tsv
+    result = tfidf_transformer(result, client)
+  File "Rapids_Dask/tfidf_rapids_pipeline_v2.py", line 59, in tfidf_transformer
+    result.compute_chunk_sizes()
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/dask/array/core.py", line 1389, in compute_chunk_sizes
+    tuple(int(chunk) for chunk in chunks) for chunks in compute(tuple(c))[0]
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/dask/base.py", line 571, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/client.py", line 2746, in get
+    results = self.gather(packed, asynchronous=asynchronous, direct=direct)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/client.py", line 1946, in gather
+    return self.sync(
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/utils.py", line 310, in sync
+    return sync(
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/utils.py", line 364, in sync
+    raise exc.with_traceback(tb)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/utils.py", line 349, in f
+    result[0] = yield future
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+    value = future.result()
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/distributed/client.py", line 1811, in _gather
+    raise exception.with_traceback(traceback)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cuml/dask/common/base.py", line 432, in _transform_func
+    return model.transform(data, **kwargs)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cuml/internals/api_decorators.py", line 415, in inner
+    return func(*args, **kwargs)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cuml/feature_extraction/_tfidf.py", line 206, in transform
+    X = X.copy()
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cupyx/scipy/sparse/data.py", line 60, in copy
+    return self._with_data(self.data.copy(), copy=True)
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/cupyx/scipy/sparse/compressed.py", line 302, in _with_data
+    (data, self.indices.copy(), self.indptr.copy()),
+  File "cupy/_core/core.pyx", line 475, in cupy._core.core.ndarray.copy
+  File "cupy/_core/core.pyx", line 501, in cupy._core.core.ndarray.copy
+  File "cupy/_core/core.pyx", line 460, in cupy._core.core.ndarray.astype
+  File "cupy/_core/core.pyx", line 167, in cupy._core.core.ndarray.__init__
+  File "cupy/cuda/memory.pyx", line 718, in cupy.cuda.memory.alloc
+  File "/home/rgoli/.conda/envs/rapids-22.02/lib/python3.8/site-packages/rmm/rmm.py", line 212, in rmm_cupy_allocator
+    buf = librmm.device_buffer.DeviceBuffer(size=nbytes, stream=stream)
+  File "rmm/_lib/device_buffer.pyx", line 88, in rmm._lib.device_buffer.DeviceBuffer.__cinit__
+MemoryError: std::bad_alloc: out_of_memory: CUDA error at: /home/rgoli/.conda/envs/rapids-22.02/include/rmm/mr/device/cuda_memory_resource.hpp
