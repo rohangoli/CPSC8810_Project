@@ -61,7 +61,10 @@
     tfidf_rapids_pipeline.py - Implementation of Rapids TF-IDF Hashing-Vectorizer Pipeline for processing data files individually
     tfidf_rapids_pipeline_v2.py - Implementation of Rapids TF-IDF Hashing-Vectorizer Pipeline for processing data files by concatenation 
     tfidf_rapids_cntvectzr.py - Implementation of Rapids TF-IDF Count-Vectorizer Pipeline (Not Working)
-
+    tfidf_rapids_output.txt - Sample TF-IDF Vector after processing
+    rapids_timings.txt - Timing Output Logs
+    MultiGPU_DataConcat_timings.txt - Timing Output Logs
+    GPU2_DataConcat_timings.txt - Timing Output Logs
 # Julia
     TF_IDF_Serial.ipynb - jupyter notebook for serial version of TF-IDF
     TF_IDF_Thread.ipynb - jupyter notebook for parallelizing the looping construct
