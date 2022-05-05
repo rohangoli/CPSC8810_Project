@@ -28,3 +28,9 @@
     TF_IDF_Threads_Spawn.ipynb - jupyter notebook for parallelizing using @spawn macro
     mpi_tf_idf.jl - compute TF-IDf using mpi (mpirun -np <no_of_process> julia mpi_tf_idf.jl)
     TF_IDF_distributed.ipynb - jupyter notebook for parallelizing using distributed computing
+    
+# Spark
+    TF_IDF_COMBINE_ALL_4Node.ipynb - Notebook for running on 4 nodes
+    TF_IDF_COMBINE_ALL_DF_1Node.ipynb - Notebook for running on 1 Node
+    The core code for computation of TF-IDF is same in the above notebooks. The only difference is with respect to the folder into which the computation time results are dumped. Results of computation on 4 Nodes are dumped into metrics_4node; Results on 1 Node are dumped into metrics_1node. Please ensure bothe these folders are created in the same directory as the jupyter notebook to avoid errors
+    
