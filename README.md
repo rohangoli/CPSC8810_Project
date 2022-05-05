@@ -57,7 +57,7 @@
 
     5 directories, 27 files
 
-### Rapids
+## Rapids
     tfidf_rapids_pipeline.py - Implementation of Rapids TF-IDF Hashing-Vectorizer Pipeline for processing data files individually
     tfidf_rapids_pipeline_v2.py - Implementation of Rapids TF-IDF Hashing-Vectorizer Pipeline for processing data files by concatenation 
     tfidf_rapids_cntvectzr.py - Implementation of Rapids TF-IDF Count-Vectorizer Pipeline (Not Working)
@@ -65,14 +65,14 @@
     rapids_timings.txt - Timing Output Logs
     MultiGPU_DataConcat_timings.txt - Timing Output Logs
     GPU2_DataConcat_timings.txt - Timing Output Logs
-# Julia
+## Julia
     TF_IDF_Serial.ipynb - jupyter notebook for serial version of TF-IDF
     TF_IDF_Thread.ipynb - jupyter notebook for parallelizing the looping construct
     TF_IDF_Threads_Spawn.ipynb - jupyter notebook for parallelizing using @spawn macro
     mpi_tf_idf.jl - compute TF-IDf using mpi (mpirun -np <no_of_process> julia mpi_tf_idf.jl)
     TF_IDF_distributed.ipynb - jupyter notebook for parallelizing using distributed computing
     
-# Spark
+## Spark
     TF_IDF_COMBINE_ALL_4Node.ipynb - Notebook for running on 4 nodes
     TF_IDF_COMBINE_ALL_DF_1Node.ipynb - Notebook for running on 1 Node
     The core code for computation of TF-IDF is same in the above notebooks. The only difference is with respect to the folder into which the computation time results are dumped. Results of computation on 4 Nodes are dumped into metrics_4node; Results on 1 Node are dumped into metrics_1node. Please ensure bothe these folders are created in the same directory as the jupyter notebook to avoid errors
