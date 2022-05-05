@@ -58,7 +58,7 @@
     5 directories, 27 files
 
 ### Rapids
-    Rapids TF-IDF Pipeline for processing data files individually - ./Rapids_Dask/tfidf_rapids_pipeline.py
+Rapids TF-IDF Pipeline for processing data files individually - ./Rapids_Dask/tfidf_rapids_pipeline.py
 
 # Julia
     TF_IDF_Serial.ipynb - jupyter notebook for serial version of TF-IDF
