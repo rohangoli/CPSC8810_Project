@@ -15,7 +15,7 @@ MPI.Init()
 
 startTime = Dates.Time(Dates.now()) 
 
-df = DataFrame(CSV.File("/home/joelkik/HPC/Project/Data/amazon_reviews_us_Apparel_v1_00.tsv"))
+df = DataFrame(CSV.File("/home/joelkik/HPC/Project/Data/amazon_reviews_us_Books_v1_01.tsv"))
 
 comm = MPI.COMM_WORLD
 rank = MPI.Comm_rank(comm)
