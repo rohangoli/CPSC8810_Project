@@ -48,7 +48,7 @@ def count_vectorizer(data, column_name, client):
     #meta = dask.array.from_array(cp.sparse.csr_matrix(cp.zeros(1, dtype=cp.float32)))
     #cnt_vectorized = data[column_name].map_partitions(vectorizer.fit_transform, meta=meta).astype(cp.float32)
     cnt_vectorized = data[column_name].map_partitions(vectorizer.fit_transform).astype(cp.float32)
-    cnt_vectorized = to_sparse_dask_array(cnt_vectorized)
+    cnt_vectorized = to_sparse_dask_array(cnt_vectorized, client)
     cnt_vectorized = cnt_vectorized.persist()
     wait(cnt_vectorized);
     return cnt_vectorized
@@ -88,6 +88,7 @@ if __name__ == "__main__":
     parser.add_argument('-ftype','--filetype', help='Input file format - parquest/tsv', required=True)
 
     args = parser.parse_args()
+    total_time_start = time. time()
     
     ## Use 1 GPU as 1 Dask Worker
     cluster = LocalCUDACluster()
