@@ -1,7 +1,5 @@
 # Rapids+Dask Environment
-
-
-    
+ 
 ### Module on Palmetto Supercomputer
     module load anaconda3/2019.10-gcc/8.3.1 cudnn/8.1.0.77-11.2-linux-x64-gcc/8.4.1 cuda/11.2.0-gcc/8.4.1
 
@@ -21,6 +19,46 @@
     cp /scratch1/rgoli/aws_customer_reviews/amazon_reviews_us_PC_v1_00.tsv.gz Data/
 
     gunzip -k amazon_reviews_us_PC_v1_00.tsv.gz
+
+# Code Directory 
+    .
+    ├── Julia
+    │   ├── TF_IDF_Serial.ipynb
+    │   ├── TF_IDF_Serial_python.ipynb
+    │   ├── TF_IDF_Thread.ipynb
+    │   ├── TF_IDF_Threads_Spawn.ipynb
+    │   ├── TF_IDF_distributed.ipynb
+    │   ├── mpi_tf_idf.jl
+    │   └── sample_us.tsv
+    ├── README.md
+    ├── Rapids_Dask
+    │   ├── GPU2_DataConcat_timings.txt
+    │   ├── MultiGPU_DataConcat_timings.txt
+    │   ├── rapids_timings.txt
+    │   ├── tfidf_rapids_cntvectzr.py
+    │   ├── tfidf_rapids_output.txt
+    │   ├── tfidf_rapids_pipeline.py
+    │   └── tfidf_rapids_pipeline_v2.py
+    ├── Spark
+    │   ├── TF_IDF_COMBINE_ALL_4Node.ipynb
+    │   ├── TF_IDF_COMBINE_ALL_DF_1Node.ipynb
+    │   ├── metrics_1node
+    │   │   ├── perf_results_counttf_48.csv
+    │   │   └── perf_results_hashtf_48.csv
+    │   ├── metrics_4node
+    │   │   ├── perf_results_counttf_48.csv
+    │   │   └── perf_results_hashtf_48.csv
+    │   └── source.txt
+    ├── create_dataset.sh
+    ├── csr_notes.txt
+    ├── datasets.txt
+    ├── notes.txt
+    └── sample_us.tsv
+
+    5 directories, 27 files
+
+### Rapids
+    Rapids TF-IDF Pipeline for processing data files individually - ./Rapids_Dask/tfidf_rapids_pipeline.py
 
 # Julia
     TF_IDF_Serial.ipynb - jupyter notebook for serial version of TF-IDF
